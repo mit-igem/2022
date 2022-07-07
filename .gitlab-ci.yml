@@ -1,26 +1,25 @@
-image: python:3.6
-# image: node:14.18.0-alpine
+# image: python:3.6
+image: node:14.18.0-alpine
 
 # This folder is cached between builds
 # https://docs.gitlab.com/ce/ci/yaml/README.html#cache
-# cache:
-#   paths:
-#     - node_modules/
-#     # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
-#     - .cache/
-#     - public/
+cache:
+  paths:
+    - node_modules/
+    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
+    - .cache/
+    - public/
 
 pages:
   stage: build
   script:
-  - curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
-  - apt-get install -y gcc g++ make
-  - apt-get install -y nodejs
+  # - curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+  # - apt-get install -y gcc g++ make
+  # - apt-get install -y nodejs
   - npm install
   - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
-    - .cache/
     - public
   only:
   - main
