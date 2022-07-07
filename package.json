@@ -1,0 +1,22 @@
+{
+  "name": "mit-i-gem-2022-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "description": "mit-i-gem-2022-wiki",
+  "author": "Matthew Feng",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.18.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
