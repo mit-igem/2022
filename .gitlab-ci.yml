@@ -3,6 +3,8 @@ image: python:3.6
 pages:
   stage: build
   script:
+  - curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+  - apt-get install -y nodejs
   - pip install --no-cache-dir -r dependencies.txt
   - FLASK_APP=app.py flask freeze
   artifacts:
