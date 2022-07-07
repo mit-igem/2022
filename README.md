@@ -1,54 +1,30 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# MIT iGEM 2022
 
-## 🚀 Quick start
+For this year's Wiki, we'll be using [Gatsby](https://www.gatsbyjs.com/), a _static-site generator_. Gatsby runs on [Node.js](https://nodejs.org/en/), which is a JavaScript runtime used to develop web applications (it's like the ). To 
 
-1.  **Create a Gatsby site.**
+## Getting started
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+### Installing dependencies
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+The first step is to install all the dependencies we'll be using to write JavaScript and React code.
 
-2.  **Start developing.**
+We'll be installing the following pieces of software (note that the programs are written in `monospace font` because they are command line programs - programs we can run on the command line; "command line" is also synonymous with "terminal"):
 
-    Navigate into your new site’s directory and start it up.
+- [`nvm`](https://github.com/nvm-sh/nvm)
+  - `nvm` stands for **Node Version Manager**. It's a handy utility that lets us Node.js on our computer in a portable way, so that it's almost impossible to mess up our system. It's also used by developers who need to work with different versions of Node (e.g. between personal projects and company projects).
+- `node` (v14.18.0)
+  - We'll use `nvm` to install `node`. Once we install `node`, it'll also install `npm`, the **Node Package Manager**. `npm` will let us download and use _libraries_ others have written. For example, Gatsby is a library written in JavaScript and runs on our computer using `node`.
+- `gatsby`
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+1. Open up a command line window (Bash shell for Windows, Terminal on macOS) and run the following command (copy and pasting is fine).
 
-    Your site is now running at http://localhost:8000!
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Running the development server to view live edits
 
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```shell
+npm run develop
+```
