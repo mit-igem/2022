@@ -1,6 +1,6 @@
 # MIT iGEM 2022
 
-For this year's Wiki, we'll be using [Gatsby](https://www.gatsbyjs.com/), a _static-site generator_. Gatsby runs on [Node.js](https://nodejs.org/en/), which is a JavaScript runtime used to develop web applications (it's like the ). To 
+For this year's Wiki, we'll be using [Gatsby](https://www.gatsbyjs.com/), a _static-site generator_. What this means is that we can use very nice user interface frameworks like React, and compile them down into static files which can be displayed by any web server, including GitLab Pages (where the Wikis are hosted this year). Gatsby runs on [Node.js](https://nodejs.org/en/), which is a JavaScript runtime used to develop web applications (it's like the `python` executable used to interpret Python scripts).
 
 ## Getting started
 
