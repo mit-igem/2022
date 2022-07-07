@@ -3,3 +3,7 @@ venv
 .vscode
 __pycache__
 public
+*.DS_Store
+__MACOSX/
+.cache/
+node_modules/
