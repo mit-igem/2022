@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/mit",
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://2022.igem.wiki`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`],
 };
