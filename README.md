@@ -28,3 +28,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```shell
 npm run develop
 ```
+
+### Pushing changes
+If you want to push changes without triggering a CI run, add `-o ci.skip` option to your `git push` command:
+
+```shell
+git push -o ci.skip
+```
