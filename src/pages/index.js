@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <main>
-        <h1>test</h1>
+        <h1>MIT iGEM 2022</h1>
       </main>
     </Layout>
   );
