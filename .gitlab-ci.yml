@@ -16,6 +16,8 @@ pages:
   # - curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
   # - apt-get install -y gcc g++ make
   # - apt-get install -y nodejs
+  - apt-get install -y git
+  - "git config --global url.\"https://github.com/\".insteadOf git@github.com:"
   - npm install
   - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
