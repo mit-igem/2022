@@ -35,3 +35,6 @@ If you want to push changes without triggering a CI run, add `-o ci.skip` option
 ```shell
 git push -o ci.skip
 ```
+
+## devnotes
+- 

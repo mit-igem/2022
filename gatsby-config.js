@@ -3,5 +3,25 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://2022.igem.wiki`,
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/_content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          { resolve: `gatsby-remark-images`, options: { maxWidth: 960 } },
+        ],
+        remarkPlugins: [require("remark-math")],
+        rehypePlugins: [require("rehype-katex")],
+      },
+    },
+    `gatsby-plugin-sass`,
+  ],
 };
