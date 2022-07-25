@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <main>
-        <h1>MIT iGEM 2022</h1>
+        <h1>Our 2022 iGEM project: preventing oral mucositis!</h1>
       </main>
     </Layout>
   );
