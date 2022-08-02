@@ -22,6 +22,7 @@
     "gatsby-plugin-sass": "^5.18.1",
     "gatsby-plugin-sharp": "^4.19.0",
     "gatsby-remark-images": "^6.19.0",
+    "gatsby-remark-numbered-footnotes": "github:mattfeng/gatsby-remark-numbered-footnotes",
     "gatsby-source-filesystem": "^4.18.1",
     "katex": "^0.16.0",
     "react": "^17.0.0",

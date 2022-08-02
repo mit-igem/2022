@@ -17,6 +17,7 @@ module.exports = {
       options: {
         gatsbyRemarkPlugins: [
           { resolve: `gatsby-remark-images`, options: { maxWidth: 960 } },
+          `gatsby-remark-numbered-footnotes`,
         ],
         remarkPlugins: [require("remark-math")],
         rehypePlugins: [require("rehype-katex")],
