@@ -2,6 +2,12 @@
 
 For this year's Wiki, we'll be using [Gatsby](https://www.gatsbyjs.com/), a _static-site generator_. What this means is that we can use very nice user interface frameworks like React, and compile them down into static files which can be displayed by any web server, including GitLab Pages (where the Wikis are hosted this year). Gatsby runs on [Node.js](https://nodejs.org/en/), which is a JavaScript runtime used to develop web applications (it's like the `python` executable used to interpret Python scripts).
 
+## Quick start
+
+```
+npm install
+```
+
 ## Getting started
 
 ### Installing dependencies
@@ -15,7 +21,6 @@ We'll be installing the following pieces of software (note that the programs are
 - `node` (v14.18.0)
   - We'll use `nvm` to install `node`. Once we install `node`, it'll also install `npm`, the **Node Package Manager**. `npm` will let us download and use _libraries_ others have written. For example, Gatsby is a library written in JavaScript and runs on our computer using `node`.
 - `gatsby`
-
 
 1. Open up a command line window (Bash shell for Windows, Terminal on macOS) and run the following command (copy and pasting is fine).
 
