@@ -1,4 +1,4 @@
-image: node:14.18.0
+image: node:14.18.0-buster
 
 # This folder is cached between builds
 # https://docs.gitlab.com/ce/ci/yaml/README.html#cache
@@ -14,7 +14,7 @@ pages:
   script:
   - apt-get install -y git
   - "git config --global url.\"https://github.com/\".insteadOf git@github.com:"
-  - npm install
+  - npm ci
   - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
