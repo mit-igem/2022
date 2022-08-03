@@ -1,4 +1,4 @@
-image: node:14.18.0-alpine
+image: node:14.18.0
 
 # This folder is cached between builds
 # https://docs.gitlab.com/ce/ci/yaml/README.html#cache
@@ -12,7 +12,7 @@ cache:
 pages:
   stage: build
   script:
-  - apk add --no-cache git
+  - apt-get install -y git
   - "git config --global url.\"https://github.com/\".insteadOf git@github.com:"
   - npm install
   - ./node_modules/.bin/gatsby build --prefix-paths
