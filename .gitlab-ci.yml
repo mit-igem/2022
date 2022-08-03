@@ -12,8 +12,9 @@ cache:
 pages:
   stage: build
   script:
-  - apt-get install -y git
+  # - apt-get install -y git
   - "git config --global url.\"https://github.com/\".insteadOf git@github.com:"
+  - git config --global url."https://".insteadOf git://
   - npm ci
   - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
