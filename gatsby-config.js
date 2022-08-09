@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/mit",
+  pathPrefix: process.env.PATH_PREFIX || "/mit",
   siteMetadata: {
     siteUrl: `https://2022.igem.wiki`,
   },
