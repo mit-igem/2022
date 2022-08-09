@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sharp`,
+    // `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,9 +17,8 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
-          `gatsby-remark-relative-images-v2`,
-          { resolve: `gatsby-remark-images`, options: { maxWidth: 960 } },
-          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-copy-relative-linked-files`,
+          // { resolve: `gatsby-remark-images`, options: { maxWidth: 960 } },
           `gatsby-remark-numbered-footnotes`,
         ],
         remarkPlugins: [require("remark-math")],
