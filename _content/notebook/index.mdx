@@ -1,4 +1,10 @@
-## Lab images
+## Sequencing
+
+|order|date      |desc|results|
+|:----|:---------|:---|:------|
+|H4X  |2022-07-26|||
+|Q9P  |2022-08-03|pL0_001[acsAB] sample #2, pL1_003[mRuby2]||
+|D6U  |2022-08-09|pL0_001[acsAB] sample #1||
 
 ```copyfiles
 styles.css
@@ -6,17 +12,59 @@ styles.css
 
 <link rel="stylesheet" href="./styles.css" />
 
-## 2022-08-03
+## Bacterial cellulose (_E. coli_)
 
-|time|desc|image|
+### `pL0_001_EC[acsAB]`
+
+|GG assembly date|EC xfm date|notes|EC plate|minipreps|virtual digest|gel desc|gel|sequencing|
+|:--------------:|:---------:|:----|:------:|:-------:|:------------:|:-------|:-:|:--------:|
+|07/27|07/28|sample #1 looks most like the virtual digest with potential uncut plasmid remaining|<img src="./2022-07-28 pL0_001_EC[acsAB] xfm.jpg" />|7/30 #1; 7/30 #2|<img src="./gels/2022-08-01 virtual digest pL0_001[acsAB].png" />|run 08/01 <br/>lane 2: 07/30 #1, lane 3: 07/30 #2|<img src="./gels/2022-08-01 ADP1 acsAB.png" />|Q9P, D6U|
+
+### `pL0_002_EC[acsCD]`
+
+
+### Glutathione overexpression (yeast)
+
+### `pL1_001_SC[ADP1]`
+|GG assembly date|EC xfm date|notes|EC plate|minipreps|virtual digest|gel desc|gel|sequencing|Yeast xfm date|Yeast plate|
+|:--------------:|:---------:|:----|:------:|:-------:|:------------:|:-------|:-:|:--------:|:------------:|:---------:|
+|07/25|07/26|the gel is very messy; with such few colonies (2), it's likely construction completely failed|<img src="./plates/2022-07-26 pL1_001_SC[ADP1] xfm.jpg" />|07/28 #1 (green colony, likely failed construction), 07/28 #2|<img src="./gels/2022-08-01 virtual digest pL1_001 ADP1.png" />|lane 1: 07/28 #2 + BbsI + PvuI|<img src="./gels/2022-08-01 ADP1 acsAB.png" />||||
+
+### `pL1_002_SC[GSH1]`
+|GG assembly date|EC xfm date|notes|EC plate|minipreps|virtual digest|gel desc|gel|sequencing|Yeast xfm date|Yeast plate|
+|:--------------:|:---------:|:----|:------:|:-------:|:------------:|:-------|:-:|:--------:|:------------:|:---------:|
+|07/25|07/26|no colonies|<img src="./plates/2022-07-26 pL1_002_SC[GSH1] xfm.jpg" />|||||||
+
+### `pL1_003_SC[mRuby2]`
+
+|GG assembly date|EC xfm date|notes|EC plate|minipreps|virtual digest|gel desc|gel|sequencing|Yeast xfm date|Yeast plate|
+|:--------------:|:---------:|:----|:------:|:-------:|:------------:|:-------|:-:|:--------:|:------------:|:---------:|
+|08/06|08/07|colonies are red but the gel looks wrong|<img src="./2022-08-07 pL1_003[mRuby2] EC xfm a.jpg" alt="2022-08-08 3:00pm"/> <img src="./2022-08-07 pL1_003[mRuby2] EC xfm b.jpg" alt="2022-08-08 3:00pm"/>|08/09 a #1, 08/09 a #2, 08/09 b #1, 08/09 b #2|<img src="./gels/2022-08-09 virtual digest pL1_003[mRuby2].png" />|run 08/09 <br /> |<img src="./gels/2022-08-09 mRuby2.jpg" />||08/09 5:45PM||
+
+### `pYTK096` (Ura cassette)
+
+### `pYTK097` (Leu cassette)
+
+
+
+### 2022-08-03
+
+|time photo taken|desc|image|
 |:---|:---|:---:|
-||<img src="./2022-08-03 pL0_002_EC[acsCD] xfm.jpg" />|
+||pL0_002_EC[acsCD]|<img src="./2022-08-03 pL0_002_EC[acsCD] xfm.jpg" />|
 
-## 2022-08-08
+### 2022-08-07
 
-|time|desc|image|
+|time photo taken|desc|image|
+|:---------------|:---|:---:|
+|2022-08-08 3:00pm|pL1_003[mRuby2] assembled 2022-08-06 EC xfm a| alt="2022-08-08 3:00pm"/>|
+|2022-08-08 3:00pm|pL1_003[mRuby2] assembled 2022-08-06 EC xfm b|<img src="./2022-08-07 pL1_003[mRuby2] EC xfm b.jpg" />|
+
+### 2022-08-08
+
+|time photo taken|desc|image|
 |:---|:---|:---:|
-||taken 2022-08-09 10:35am (growth=15 hr)|<img src="./2022-08-08 YTK096 +ve control a.jpg" />|
-||same as above|<img src="./2022-08-08 YTK096 +ve control b.jpg" />|
-||same as above|<img src="./2022-08-08 YTK096 xfm a.jpg" />|
-||same as above|<img src="./2022-08-08 YTK096 xfm b.jpg" />|
+|2022-08-09 10:35am|pYTK096 +ve control a; growth=15 hr|<img src="./2022-08-08 YTK096 +ve control a.jpg" />|
+|same as above|pYTK096 +ve control b; growth=17:40 hr|<img src="./2022-08-08 YTK096 +ve control b.jpg" />|
+|same as above|pYTK096 xfm a|<img src="./2022-08-08 YTK096 xfm a.jpg" />|
+|same as above|pYTK096 xfm b|<img src="./2022-08-08 YTK096 xfm b.jpg" />|

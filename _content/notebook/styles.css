@@ -1,3 +1,15 @@
 img {
     width: 350px;
 }
+
+td {
+    border: 1px solid gray;
+}
+
+th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
