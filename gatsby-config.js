@@ -16,7 +16,9 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
+          `gatsby-remark-relative-images-v2`,
           { resolve: `gatsby-remark-images`, options: { maxWidth: 960 } },
+          `gatsby-remark-copy-linked-files`,
           `gatsby-remark-numbered-footnotes`,
         ],
         remarkPlugins: [require("remark-math")],
