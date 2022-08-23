@@ -7,6 +7,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     // `gatsby-remark-images`,
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,

@@ -1,7 +1,8 @@
-node_modules/
 .cache/
 public
 *.DS_Store
 __MACOSX/
 .cache/
 node_modules/
+
+*.env*

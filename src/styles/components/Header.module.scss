@@ -1,10 +1,33 @@
 @use "../sizes.scss" as sizes;
+@use "../fonts.scss" as fonts;
+@use "../colors.scss" as colors;
 
 .header {
+    font-family: fonts.$headers;
+    height: sizes.$headerHeight;
+
+    background-color: colors.$headerBackground;
+    color: colors.$headerText;
+
+    a {
+        color: colors.$headerText;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+}
+
+.logo {
+    text-decoration: none !important;
 }
 
 .contentLimit {
     width: sizes.$contentWidth;
+    height: 100%;
     margin: 0 auto;
 
     // horizontal row
@@ -15,12 +38,23 @@
 }
 
 .nav {
-    display: flex;
-
     width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: stretch;
     justify-content: flex-end;
 
-    * {
-        padding: 0 1rem;
+    > * {
+        padding: 1rem 1rem;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+    > *:hover {
+        background-color: colors.$headerBackgroundHighlight;
+        transition: all 0.1s;
     }
 }

@@ -1,0 +1,30 @@
+@use "../colors.scss" as colors;
+
+.dropdown {
+    background-color: colors.$dropdownBackground;
+
+    * {
+        padding: 1rem;
+        display: block;
+    }
+
+    *:hover {
+        padding: 1rem;
+        display: block;
+        background-color: colors.$dropdownBackgroundHighlight;
+    }
+
+    a {
+        color: colors.$dropdownText !important;
+    }
+}
+
+.label {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    padding-left: 0.25rem;
+    scale: 80%;
+}
