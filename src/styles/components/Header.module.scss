@@ -1,0 +1,26 @@
+@use "../sizes.scss" as sizes;
+
+.header {
+}
+
+.contentLimit {
+    width: sizes.$contentWidth;
+    margin: 0 auto;
+
+    // horizontal row
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.nav {
+    display: flex;
+
+    width: 50%;
+    justify-content: flex-end;
+
+    * {
+        padding: 0 1rem;
+    }
+}
