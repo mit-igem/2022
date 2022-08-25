@@ -6,13 +6,13 @@ import * as styles from "../styles/components/Layout.module.scss";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className={styles.root}>
       <Header />
 
       {children}
 
       <Footer />
-    </>
+    </div>
   );
 };
 

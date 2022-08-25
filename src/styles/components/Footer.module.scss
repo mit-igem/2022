@@ -1,0 +1,18 @@
+@use "../colors.scss" as colors;
+
+.footer {
+    // place footer at bottom of page
+    position: absolute;
+    bottom: 0;
+
+    // footer dimensions
+    width: 100%;
+    padding: 1rem;
+
+    background-color: colors.$footerBackground;
+    p {
+        margin: 0;
+    }
+}
+
+
